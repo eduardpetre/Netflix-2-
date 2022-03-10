@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang= "ro">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name = "author" content="Netflix"/>
+  
+  <title>Netflix.com/</title>
+
+  <style>
+      
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #141414;
+        background-blend-mode: multiply;
+        position:relative;
+        display:flex;
+        flex-direction: column;
+      }
+      
+      html{
+        font-size:62.5%;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-image: linear-gradient(180deg, black, rgb(20,20,20,0.2));
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index:1;
+      }
+      
+      nav li {
+        float: left;
+      }
+
+      nav li a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        height:3rem;
+        padding: 14px 16px;
+        color: white;
+        text-decoration: none;
+        font-size:medium;
+      }
+      
+      nav li a:hover{
+        background-color: black;
+      }
+
+      nav .logo {
+        width: 10rem;
+        margin: auto;
+        height: 3rem;
+      }
+      nav .logo img {
+        width: 10rem;
+        height: 4rem;
+      }
+
+      main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(bgimage2.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+       
+      .login {
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        width: 300px;
+        height: 400px;
+        padding: 60px 68px 40px;
+      }
+      
+      .login__title {
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #fff;
+      }
+      
+      .login__group {
+        position: relative;
+        z-index: 10;
+        display: flex;
+      }
+      
+      .login__group__label {
+        position: absolute;
+        z-index: 150;
+        color: #b3b3b3;
+        font-size: 0.9rem;
+        top: 30px;
+        left: 18px;
+        transition: all 300ms ease-in;
+      }
+      
+      .login__group__input {
+        width: 100%;
+        position: relative;
+        z-index: 100;
+        background: #333;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: none;
+        opacity: 1;
+        font-size: 1rem;
+        color: #fff;
+        line-height: 50px;
+        padding: 12px 18px 0;
+      }
+      
+      .login__group__input:focus + .login__group__label {
+        top: 15px;
+        font-size: 0.7rem;
+      }
+       
+      .login__sign-in{
+        text-decoration: none;
+        margin: 24px 0 12px;
+        padding: 16px;
+        color: #fff;
+        background: #e50914;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .login__sign-in a{
+        padding: 16px;
+        text-decoration:none;
+        color: #fff;
+      }
+      
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a class="logo" href="1.html"><img src="logo.png" alt="logo"></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="login">
+      <h1 class="login__title">Sign In</h1>
+      <form action="2.html"> 
+        <div class="login__group">
+          <input class="login__group__input" type="text" /><label class="login__group__label">Email or phone number</label>
+        </div>
+        <div class="login__group">
+          <input class="login__group__input" type="password" /><label class="login__group__label">Password</label>
+        </div>
+        <button class="login__sign-in" type="submit">Sign In</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
