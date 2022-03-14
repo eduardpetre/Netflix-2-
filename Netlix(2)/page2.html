@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang= "ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name = "author" content="Netflix"/>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  
+  <title>Netflix.com/</title>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a class="logo" href="page2.html"><img src="./resources/logo.png" alt="logo"></a></li>
+    </ul>
+  </nav>
+
+  <div class="whoIsWatching">
+    <div class="main-div">
+        <h1>Who's watching?</h1>
+        <form class="memberDiv" action="page2.html">
+            <div class="addIcon"><span><input type="radio" id="user1" name="user" value="user1" onchange="window.location.href='page3.html'"/><label for="user1">User 1</label></span></div>
+            <div class="addIcon"><span><input type="radio" id="user2" name="user" value="user2" onchange="window.location.href='page3.html'"><label for="user2">User 2</label></span></div>
+            <div class="addIcon"><span><input type="radio" id="user3" name="user" value="user3" onchange="window.location.href='page3.html'"><label for="user3">User 3</label></span></div>
+        </form>
+    </div>  
+  </div>
+
+</body>
+</html>
