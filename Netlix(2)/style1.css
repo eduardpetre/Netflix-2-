@@ -1,4 +1,4 @@
-    body {
+  body {
         margin: 0;
         padding: 0;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -13,7 +13,7 @@
         font-size:62.5%;
       }
 
-      nav ul {
+      .nav__list {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -25,11 +25,11 @@
         z-index:1;
       }
       
-      nav li {
+      .nav__list__item {
         float: left;
       }
 
-      nav li a {
+      .nav__link {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -41,16 +41,16 @@
         font-size:medium;
       }
       
-      nav li a:hover{
+      .nav__link:hover{
         background-color: black;
       }
 
-      nav .logo {
+      .logo {
         width: 10rem;
         margin: auto;
         height: 3rem;
       }
-      nav .logo img {
+      .nav__logo__img {
         width: 10rem;
         height: 4rem;
       }
@@ -65,6 +65,22 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+      }
+
+      @media screen and (max-width: 600px){
+          main{
+              background-image: none;
+              background-color: black;}
+
+          nav .logo img{
+              width: 75px;
+              height: 20px;
+          }
+          .login {
+              width: 100vw;
+              margin: 0;
+              padding: 0;
+          }
       }
        
       .login {

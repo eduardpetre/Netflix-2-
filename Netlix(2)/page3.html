@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name = "author" content="Netflix"/>
-  <link rel="stylesheet" type="text/css" href="style3.css">  
-  <title>Netflix.com/</title>
+  <link rel="stylesheet" type="text/css" href="style3.css">
+  <link rel="shortcut icon" href="./resources/shortcuticon.png">
+
+  <title>Netflix</title>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a class="logo" href="page2.html"><img src="./resources/logo.png" alt="logo"></a>
-      <li><a href="page2.html">Users</a></li>
-      <li class="dropdown">
-        <a class="dropbtn">Movies</a>
+  <nav  class="nav__bar">
+    <ul class="nav__list">
+      <li class="nav__list__item"><a class="logo nav__link" href="page2.html"><img class="nav__logo__img" src="./resources/logo.png" alt="logo"></a>
+      <li class="nav__list__item"><a class="nav__link" href="page2.html">Users</a></li>
+      <li class="nav__list_item dropdown">
+        <a class="nav__link dropbtn">Movies</a>
         <div class="dropdown-content">
           <a href="#unu">Limitless</a>
           <a href="#doi">Fast&Furious</a>
@@ -22,7 +24,7 @@
           <a href="#patru">Lucifer</a>
         </div>
       </li>
-      <li><a href="page1.html">Sign out</a></li>
+      <li class="nav__list__item"><a class="nav__link" href="page1.html">Sign out</a></li>
     </ul>
   </nav>
     
@@ -89,114 +91,6 @@
           <form action="#watch"><button class="myBtn">▷ Watch now</button> <button class="myBtn">＋ Add to list</button></form>
         </div>
       </div>  
-
-      <table id="watch">
-        <tr>
-          <th>Movie</th>
-          <th>Trailer</th>
-          <th>Theme Song</th>
-          <th>Rating</th>
-        </tr>
-        <tr>
-          <td><img src="./resources/movie1.jpg" alt="Limitless"></td>
-          <td><iframe src="https://www.youtube.com/embed/4TLppsfzQH8"></iframe></td>
-          <td><audio controls>
-              <source src="./resources/song1.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-              </audio>
-          </td>    
-      
-          <td>
-            <form>
-              <input type="checkbox" value="1star" checked>
-              <input type="checkbox" value="2star" checked>
-              <input type="checkbox" value="3star" checked>
-              <input type="checkbox" value="4star">
-              <input type="checkbox" value="5star">
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-            </form>
-          </td>
-        </tr>
-        
-        <tr>
-          <td><img src="./resources/movie2.jpg" alt="Fast&Furious"></td>
-          <td><iframe src="https://www.youtube.com/embed/2TAOizOnNPo"></iframe></td>
-          <td><audio controls>
-              <source src="./resources/song2.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-              </audio>
-          </td>
-          
-          <td>
-            <form>
-              <input type="checkbox" value="1star" checked>
-              <input type="checkbox" value="2star" checked>
-              <input type="checkbox" value="3star" checked>
-              <input type="checkbox" value="4star" checked>
-              <input type="checkbox" value="5star" checked>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-            </form>
-          </td>
-        </tr>
-        
-        <tr>
-          <td><img src="./resources/movie3.jpg" alt="Peaky Blinders"></td>
-          <td><iframe src="https://www.youtube.com/embed/oVzVdvGIC7U"></iframe></td>
-          <td><audio controls>
-            <source src="./resources/song3.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-          </td>
-            
-          <td>
-            <form>
-              <input type="checkbox" value="1star" checked>
-              <input type="checkbox" value="2star" checked>
-              <input type="checkbox" value="3star" checked>
-              <input type="checkbox" value="4star" checked>
-              <input type="checkbox" value="5star">
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-            </form>
-          </td>
-        </tr>
-      
-        <tr>
-          <td><img src="./resources/movie4.jpg" alt="Lucifer"></td>
-          <td><iframe src="https://www.youtube.com/embed/X4bF_quwNtw"></iframe></td>
-          <td><audio controls>
-            <source src="./resources/song4.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
-          </td>
-      
-          <td>
-            <form>
-              <input type="checkbox" value="1star" checked>
-              <input type="checkbox" value="2star" checked>
-              <input type="checkbox" value="3star" checked>
-              <input type="checkbox" value="4star">
-              <input type="checkbox" value="5star">
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-              <label>⭐</label>
-            </form>
-          </td>
-        </tr>
-      </table>
 </body>
 </html>
   

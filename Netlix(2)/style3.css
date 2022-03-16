@@ -14,7 +14,7 @@
         flex-direction: column;
       }
 
-      nav ul {
+      .nav__list {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -26,15 +26,15 @@
         z-index: 1;
       }
       
-      nav li {
+      .nav__list__item {
         float: left;
       }
       
-      nav li:last-child {
+      .nav__list__item:last-child {
         float:right;
       }
   
-      nav li a {
+      .nav__link {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -62,7 +62,7 @@
         margin: 0;
       }
   
-      nav li a:hover, .dropdown:hover .dropbtn{
+      .nav__link:hover, .dropdown:hover .dropbtn{
         background-color: black;
       }
   
@@ -92,12 +92,12 @@
         display: block;
       }
   
-      nav .logo {
+      .logo {
         width: 10rem;
         margin: auto;
         height: 3rem;
       }
-      nav .logo img {
+      .nav__logo__img{
         width: 10rem;
         height: 4rem;
       }
@@ -236,65 +236,7 @@
       #myBtn:hover {  
         background-color: white;
         color: black;
-      }
-
-      table{
-        width:60%;
-        margin-bottom:100px; 
-        margin-top:100px; 
-        margin-left: auto; 
-        margin-right:auto;
-      }
-  
-      tr:nth-child(2n){
-        background-color: rgb(0,0,0,0.2);
-      }
-  
-      tr:nth-child(2n+1){
-        background-color: rgb(139,0,0,0.5);
-      }
-  
-      tr:nth-child(2n):hover{
-        transform:scale(1.2);
-        background-color:black;
-      }
-  
-      tr:nth-child(2n+1):hover{
-        transform:scale(1.2);
-        background-color:firebrick;
-      }
-  
-      th{
-        height: 7.5vw;
-        min-height: 8rem;
-        max-height: 10rem;
-        width: 10vw;
-        min-width: 8.4px;
-        max-width: 20rem;
-        font-size:large;
-        color:rgb(245,245,245,0.6);
-      }
-  
-      td,th{
-        text-align: center;
-        padding:15px;
-        min-width: 12rem;
-      }
-  
-      td img{
-        height: 10vw;
-        min-height: 8.4rem;
-        max-height: 20rem;
-        width: 10vw;
-        min-width: 8.4px;
-        max-width: 20rem;
-        border-radius: 0.4rem;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+      }  
       
       #watch input, #watch label{
         display:inline-block;
