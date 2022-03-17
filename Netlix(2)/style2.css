@@ -54,6 +54,7 @@ html{
   .nav__logo__img{
     width: 10rem;
     height: 4rem;
+    cursor: pointer;
   }
   
   .whoIsWatching {
@@ -70,11 +71,7 @@ html{
     justify-content: flex-start;
     align-items: center;
   }
-  .logo img {
-    width: 10rem;
-    height: 4rem;
-    cursor: pointer;
-  }
+
   
   .main-div {
     width: 100vw;
