@@ -1,6 +1,5 @@
-html{
+  html{
     font-size:62.5%;
-    scroll-behavior: smooth;
   }
   
   body {
@@ -46,11 +45,7 @@ html{
     background-color: black;
   }
   
-  .logo {
-    width: 10rem;
-    margin: auto;
-    height: 3rem;
-  }
+
   .nav__logo__img{
     width: 10rem;
     height: 4rem;
@@ -62,16 +57,6 @@ html{
     min-height: 100vh;
     background-color: #141414;
   }
-  
-  .logo {
-    width: 95vw;
-    margin: auto;
-    height: 7rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
   
   .main-div {
     width: 100vw;

@@ -1,4 +1,4 @@
-    html{
+      html{
         font-size:62.5%;
         scroll-behavior: smooth;
       }
@@ -92,11 +92,6 @@
         display: block;
       }
   
-      .logo {
-        width: 10rem;
-        margin: auto;
-        height: 3rem;
-      }
       .nav__logo__img{
         width: 10rem;
         height: 4rem;
