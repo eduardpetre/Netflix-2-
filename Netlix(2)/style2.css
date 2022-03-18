@@ -90,14 +90,12 @@
     border-radius: 0.4rem;
     border: none;
     outline: none;
-    margin-top: 4rem;
+    margin-bottom: 4rem;
     margin-right: 3.5rem;
     position: relative;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    align-items: center;
   }
   
   .memberDiv .addIcon:nth-child(1) {
@@ -119,12 +117,14 @@
   
   .addIcon a{
     width: inherit;
-    position: relative;
-    bottom:-10.5rem;
+    min-width:8.4rem;
+    position: absolute;
+    bottom:-3.5rem;
     text-transform: capitalize;
     color: rgb(153, 153, 153);
     font-size: 2rem;
     text-decoration:none;
+    text-align: center;
   }
 
   
@@ -149,8 +149,9 @@
     }
 
     .addIcon a{
-      bottom:-6.5rem;
       font-size:1.5rem;
+      bottom:-2.5rem;
+      min-width:6rem;
     }
 
   }
