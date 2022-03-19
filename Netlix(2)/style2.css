@@ -66,6 +66,7 @@
     align-items: center;
     flex-direction: column;
     color: #fff;
+    margin-top:10vh;
   }
   
   .main-div h1 {
