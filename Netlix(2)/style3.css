@@ -251,45 +251,47 @@
           width: 7rem;
           height: 3rem;
         }
-
-        .nav__list {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-image: linear-gradient(180deg, black, rgb(20,20,20,0.2));
-          position: fixed;
-          top: 0;
-          width: 100%;
-          z-index: 1;
-        }
-        
-        .nav__list__item {
-          float: left;
-        }
-        
-        .nav__list__item:last-child {
-          float:right;
-        }
-    
-        .nav__link {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          text-align: center;
-          height:3rem;
-          padding: 12px 14px;
-          color: white;
-          text-decoration: none;
-          font-size:medium;
-        }
-
-        .nav__link:hover, .dropdown:hover .dropbtn{
-          background-color: black;
-        }
         
         .dropdown {
           display: none;
+        }
+
+        #unu{
+          min-height:1vh;
+          height:33vh;
+          background-image: linear-gradient(to bottom, rgba(20,20,20,0),rgba(20,20,20,1));
+        }
+
+        .myVideo{
+          bottom:auto;
+          top:0;
+          opacity: 0.7;
+          z-index:-1;
+        }
+
+        .leftbox{
+          top:15%;
+          height:31.6vh;
+          width:33vh;
+        }
+
+        .title { 
+          font-size: 1rem;
+          padding:3px;
+        }
+    
+        .item {
+          font-size: 2.5rem;
+        } 
+        
+        .details, .content{
+          font-size: 0.7em;
+        }
+
+        .myBtn {
+          margin-left: 1em;
+          font-size: 5px;
+          padding: 3px;
         }
 
         /* CREATIA ******************************************************************* */
@@ -324,9 +326,6 @@
           color: white;
         }
 
-        .lista__mea{
-          padding-top: 60px;
-        }
         ::-webkit-scrollbar {
           display:none;
           width: 12px;
