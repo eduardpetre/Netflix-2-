@@ -14,6 +14,8 @@
         flex-direction: column;
       }
 
+      .mobile{display: none;}
+
       .nav__list {
         list-style-type: none;
         margin: 0;
@@ -241,3 +243,100 @@
         margin-left: 0.3em; 
         margin-right:0.3em;
       }
+
+      @media screen and (max-width: 600px){
+        .pc{display: none;}
+
+        .nav__logo__img {
+          width: 7rem;
+          height: 3rem;
+        }
+
+        .nav__list {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-image: linear-gradient(180deg, black, rgb(20,20,20,0.2));
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+        }
+        
+        .nav__list__item {
+          float: left;
+        }
+        
+        .nav__list__item:last-child {
+          float:right;
+        }
+    
+        .nav__link {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          height:3rem;
+          padding: 12px 14px;
+          color: white;
+          text-decoration: none;
+          font-size:medium;
+        }
+
+        .nav__link:hover, .dropdown:hover .dropbtn{
+          background-color: black;
+        }
+        
+        .dropdown {
+          display: none;
+        }
+
+        /* CREATIA ******************************************************************* */
+
+        .mobile{
+          display: flex;
+          flex-direction: column;
+          margin: 4vw;
+        }
+
+        .img__container{
+          overflow-x: scroll;
+          overflow-y: hidden;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        .mobile__img{
+         
+          width: 50vw;
+          height: auto;
+          margin-left: 0.3vw;
+          margin-right: 0.3vw;
+        }
+
+        .mobile section h2{
+          font-size: 4vw;
+          color: white;
+        }
+
+        .lista__mea{
+          padding-top: 60px;
+        }
+      }
+
+   ::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
