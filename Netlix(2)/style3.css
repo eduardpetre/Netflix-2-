@@ -265,7 +265,7 @@
         .myVideo{
           bottom:auto;
           top:0;
-          opacity: 0.7;
+          opacity: 0.8;
           z-index:-1;
         }
 
@@ -324,6 +324,10 @@
           margin-bottom: 0.5vh;
           font-size: 4vw;
           color: white;
+        }
+
+        .mobile .lista__mea h2{
+          margin-top: 1vh;
         }
 
         ::-webkit-scrollbar {
